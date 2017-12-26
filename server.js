@@ -15,7 +15,7 @@ function sendFile(response,filePath,fileContents){
 
 
 function serveStatic(response,filePath){
-    console.log("hahaha")
+    console.log(filePath)
     if(cache[filePath]){
         sendFile(response,filePath,cache[filePath]);
     }else{
